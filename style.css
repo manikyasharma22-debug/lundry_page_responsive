@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 40px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: whitesmoke;    
+}
+
+.logo{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.nav-links{
+    display:flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+    text-align: center;
+    height: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.username{
+    padding: 5px 10px;
+    border:none;
+    background-color: blue;
+    border-radius: 7px;
+    color: yellow;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftpart{
+    max-width: 500px;
+}
+
+.leftpart h2{
+    font-size: 47px;
+}
+
+.leftpart h2 span{
+    color: red;
+}
+
+.leftpart p{
+    font-size: 25px;
+}
+
+.booknow{
+    padding: 20px 50px;
+    border: none;
+    border-radius: 9px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+@media (width <= 800px) {
+    .container{
+        padding: 10px;
+    }
+}
+
+@media (width <=530px) {
+    .nav-links{
+        visibility: hidden;
+    }
+
+    header{
+        justify-content: center;
+        width: fit-content
+    }
+
+    .container{
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
